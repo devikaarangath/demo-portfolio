@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  /* nav bar section  */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(113, 216, 160);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    margin: 20px;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 40px;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: rgb(87, 4, 87);
+    text-shadow: 2px 5px 9px black;
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(239, 203, 239, 0.175);
+    height: 800px;
+    color: rgb(26, 1, 26);
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background-image: url(https://images.pexels.com/photos/1382732/pexels-photo-1382732.jpeg?cs=srgb&dl=pexels-tu%E1%BA%A5n-ki%E1%BB%87t-jr-1382732.jpg&fm=jpg);
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.main{
+    border: 2px solid black;
+    box-shadow: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 40%;
+    top: 70%;
+}
+
+.heading{
+        text-align: center;
+        margin: 10px;
+}
+
+.btn{
+    padding: 10px 20px ;
+    background-color: transparent;
+    transition: 0.6s;
+    font-size: 20px;
+}
+.btn:hover{
+    cursor: pointer;
+    color: rgb(234, 216, 234);
+    background-color: rgb(17, 1, 17);
+    box-shadow: 0 0 5px rgb(12, 12, 12),0 0 10px rgb(12, 12, 12),0 0 15px rgb(12, 12, 12);
+
+}
+/* about */
+#about{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#intro{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+
+}
+#intro h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* project */
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    align-items: center;
+    padding:20px ;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+.gallery img{
+    width: 360px;
+    height: 250px;
+    margin: 10px;
+}
+.gallery img:hover{
+    width: 380px;
+    transition: .6s;
+    border-radius: 50px;
+}
+/* services */
+#services{
+    display: flex;
+    flex-direction:column ;
+    padding: 10px;
+}
+.row{
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+    margin: 10px;
+    border: 1px solid blue;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 15px;
+    background: linear-gradient(to top,blue 50%,white 50%);
+    background-size: 100% 200%;
+    transition: all 0.8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border:none;
+    box-shadow: 0 0 20px blue;
+
+}
+.box img{
+width: 250px;
+height: 250px;
+}
+/* contact */
+#contact{
+display: flex;
+flex-direction:column ;
+align-items: center;
+background-color: rgb(132, 132, 168);
+}
+.form{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.input{
+padding: 20px;
+margin: 5px;
+}
+#send{
+
+padding: 20px;
+margin: 5px;
+}
+#send:hover{
+    background-color: blue;
+    color: bisque;
+
+}
